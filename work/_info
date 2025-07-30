@@ -1,0 +1,205 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/hafsa/Desktop/assignment/memory
+T_opt
+!s110 1753694554
+V`:d==J:6IjHLPQPhe=onA0
+Z2 04 19 4 work test_multi_bank_ram fast 0
+=1-000ae431a4f1-6887415a-424dd-26861
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2_1;73
+T_opt1
+!s110 1753691711
+V[0DeiA=Ud1OjPFZc;Tb@Q3
+04 28 4 work multi_bank_memory_controller fast 0
+=1-000ae431a4f1-6887363f-a9079-25ed5
+R3
+Z6 o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1753691954
+V9i_UMkT@PT9TG_69?_zQ>1
+R2
+=1-000ae431a4f1-68873732-131bb-25fae
+R3
+R6
+R4
+n@_opt2
+R5
+R1
+vcontrolled_reg_test
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1753437928
+!i10b 1
+!s100 Pmj=dXniS5aT2@LL:b5`I1
+I9EnVW0MhRmcVoeOiIcFLE0
+S1
+R1
+Z9 w1753423559
+Z10 8controlled_register.sv
+Z11 Fcontrolled_register.sv
+!i122 0
+L0 30 36
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z14 !s108 1753437928.000000
+Z15 !s107 controlled_register.sv|
+Z16 !s90 controlled_register.sv|
+!i113 0
+Z17 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vcontrolled_register
+R7
+R8
+!i10b 1
+!s100 L[Nc3U`NW=FELmdbmPg6n2
+I;X6mZY^^eTMSFDdEoE94k0
+S1
+R1
+R9
+R10
+R11
+!i122 0
+L0 10 18
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R4
+vencoder_hamming_code
+R7
+Z18 !s110 1753683538
+!i10b 1
+!s100 z`mo3<Yl]`BG?KUbEVzk:0
+IJj5=9Vlfi5oHoUgbl9dMV3
+S1
+R1
+Z19 w1753683531
+Z20 8hamming_code.sv
+Z21 Fhamming_code.sv
+!i122 11
+L0 34 24
+R12
+R13
+r1
+!s85 0
+31
+Z22 !s108 1753683538.000000
+Z23 !s107 hamming_code.sv|
+Z24 !s90 hamming_code.sv|
+!i113 0
+R17
+R4
+vmulti_bank_memory_controller
+R7
+Z25 !s110 1753694544
+!i10b 1
+!s100 ;F69>m3U_@K8G>DdSlJ]83
+I3cfe;6=?`HEAeO95`B:aa1
+S1
+R1
+Z26 w1753694543
+Z27 8/home/hafsa/Desktop/assignment/memory/multi_bank_memory_controller_implementation.sv
+Z28 F/home/hafsa/Desktop/assignment/memory/multi_bank_memory_controller_implementation.sv
+!i122 29
+L0 7 27
+R12
+R13
+r1
+!s85 0
+31
+Z29 !s108 1753694544.000000
+Z30 !s107 /home/hafsa/Desktop/assignment/memory/multi_bank_memory_controller_implementation.sv|
+Z31 !s90 -reportprogress|300|-work|work|/home/hafsa/Desktop/assignment/memory/multi_bank_memory_controller_implementation.sv|
+!i113 0
+Z32 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vtest
+R7
+R18
+!i10b 1
+!s100 bK4?4]MJ<;lQYjTFcg4<W3
+I9BeVZL6Xf74CYQWRjMVNI1
+S1
+R1
+R19
+R20
+R21
+!i122 11
+L0 59 20
+R12
+R13
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 0
+R17
+R4
+vtest_multi_bank_ram
+R7
+R25
+!i10b 1
+!s100 :4KhHVBVhMRf5@E5mMXmO0
+I;9CAb662:^ooX09U;4ARU2
+S1
+R1
+R26
+R27
+R28
+!i122 29
+L0 100 91
+R12
+R13
+r1
+!s85 0
+31
+R29
+R30
+R31
+!i113 0
+R32
+R4

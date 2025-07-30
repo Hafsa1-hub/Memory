@@ -1,0 +1,44 @@
+`include "single_port_ram.sv"
+
+module dual_port_memory_elements ();
+//------------porta-------------------------------------------------------//
+  reg  [2:0] addra;
+  reg  [7:0] dina;
+  reg        clka;
+  reg        ena;
+  reg        wea;
+  wire [7:0] douta;
+
+//-----------------portb------------------------------------------//
+
+  reg  [2:0] addrb;
+  reg  [7:0] dinb;
+  reg        clkb;
+  reg        enb;
+  reg        web;
+  wire [7:0] doutb;
+
+//---------------  Port a instance  --------------------------------------------------//
+single_port_ram port_a (
+      .addr_i(addra),
+      .data_i(dina),
+      .clk_pi(clka),
+      .en_i  (ena),
+      .we_pi (wea),
+      .data_o(douta)
+  );
+//----------------- port b instance  -------------------------------------------------//
+single_port_ram port_b (
+      .addr_i(addrb),
+      .data_i(dinb),
+      .clk_pi(clkb),
+      .en_i  (enb),
+      .we_pi (web),
+      .data_o(doutb)
+  );
+
+//-------------------------------------------------------------------------------------------//
+
+
+endmodule
+module
