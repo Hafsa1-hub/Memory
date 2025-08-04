@@ -1,0 +1,75 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/hafsa/Desktop/assignment/memory/version1
+T_opt
+!s110 1754287065
+Ve@MS>gRAh`[IQ<7dD:@i01
+04 10 4 work axi_master fast 0
+=1-000ae431a4f1-68904bd8-ef559-1b2f
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2_1;73
+vaxi_master
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+DXx4 work 18 axi_master_sv_unit 0 22 lTQ;gaafk54IP<^zJSBnh0
+Z4 !s110 1754287052
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 1Ui;3SWUnYQEAYazk?IY^1
+Ie^0g[J34NPDD=SCSQN:K13
+!s105 axi_master_sv_unit
+S1
+R1
+Z5 w1754287045
+Z6 8/home/hafsa/Desktop/assignment/memory/version1/axi_master.sv
+Z7 F/home/hafsa/Desktop/assignment/memory/version1/axi_master.sv
+!i122 2
+L0 108 134
+Z8 OL;L;2021.2_1;73
+31
+Z9 !s108 1754287052.000000
+Z10 !s107 /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv|
+Z11 !s90 -reportprogress|300|-work|work|/home/hafsa/Desktop/assignment/memory/version1/axi_master.sv|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+Xaxi_master_sv_unit
+R3
+R4
+VlTQ;gaafk54IP<^zJSBnh0
+r1
+!s85 0
+!i10b 1
+!s100 noM:=URFYIIB30DQ`_oMf0
+IlTQ;gaafk54IP<^zJSBnh0
+!i103 1
+S1
+R1
+R5
+R6
+R7
+!i122 2
+L0 69 0
+R8
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2

@@ -1,0 +1,285 @@
+
+XSMP opening connection
+sourcing "/etc/vimrc"
+line 90: sourcing "/usr/share/vim/vim82/syntax/syntax.vim"
+line 19: sourcing "/usr/share/vim/vim82/syntax/synload.vim"
+line 21: sourcing "/usr/share/vim/vim82/syntax/syncolor.vim"
+finished sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+continuing in /usr/share/vim/vim82/syntax/synload.vim
+finished sourcing /usr/share/vim/vim82/syntax/synload.vim
+continuing in /usr/share/vim/vim82/syntax/syntax.vim
+line 25: sourcing "/usr/share/vim/vim82/filetype.vim"
+line 2289: sourcing "/usr/share/vim/vimfiles/ftdetect/stp.vim"
+finished sourcing /usr/share/vim/vimfiles/ftdetect/stp.vim
+continuing in /usr/share/vim/vim82/filetype.vim
+line 2309: sourcing "/usr/share/vim/vim82/menu.vim"
+line 185: sourcing "/usr/share/vim/vim82/autoload/paste.vim"
+finished sourcing /usr/share/vim/vim82/autoload/paste.vim
+continuing in /usr/share/vim/vim82/menu.vim
+finished sourcing /usr/share/vim/vim82/menu.vim
+continuing in /usr/share/vim/vim82/filetype.vim
+finished sourcing /usr/share/vim/vim82/filetype.vim
+continuing in /usr/share/vim/vim82/syntax/syntax.vim
+line 0: sourcing "/usr/share/vim/vim82/scripts.vim"
+finished sourcing /usr/share/vim/vim82/scripts.vim
+continuing in BufRead Autocommands for "*"
+not found in 'runtimepath': "syntax/text.vim syntax/text/*.vim"
+finished sourcing /usr/share/vim/vim82/syntax/syntax.vim
+continuing in /etc/vimrc
+line 98: sourcing "/usr/share/vim/vim82/filetype.vim"
+finished sourcing /usr/share/vim/vim82/filetype.vim
+continuing in /etc/vimrc
+line 98: sourcing "/usr/share/vim/vim82/ftplugin.vim"
+finished sourcing /usr/share/vim/vim82/ftplugin.vim
+continuing in /etc/vimrc
+finished sourcing /etc/vimrc
+sourcing "$HOME/.vimrc"
+line 4: sourcing "/usr/share/vim/vim82/syntax/syntax.vim"
+line 15: sourcing "/usr/share/vim/vim82/syntax/nosyntax.vim"
+finished sourcing /usr/share/vim/vim82/syntax/nosyntax.vim
+continuing in /usr/share/vim/vim82/syntax/syntax.vim
+line 19: sourcing "/usr/share/vim/vim82/syntax/synload.vim"
+line 21: sourcing "/usr/share/vim/vim82/syntax/syncolor.vim"
+finished sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+continuing in /usr/share/vim/vim82/syntax/synload.vim
+finished sourcing /usr/share/vim/vim82/syntax/synload.vim
+continuing in /usr/share/vim/vim82/syntax/syntax.vim
+not found in 'runtimepath': "syntax/text.vim syntax/text/*.vim"
+finished sourcing /usr/share/vim/vim82/syntax/syntax.vim
+continuing in /home/hafsa/.vimrc
+line 81: sourcing "/home/hafsa/.vim/autoload/plug.vim"
+finished sourcing /home/hafsa/.vim/autoload/plug.vim
+continuing in /home/hafsa/.vimrc
+line 14: sourcing "/usr/share/vim/vim82/ftoff.vim"
+finished sourcing /usr/share/vim/vim82/ftoff.vim
+continuing in plug#end
+line 88: sourcing "/usr/share/vim/vim82/filetype.vim"
+line 2289: sourcing "/usr/share/vim/vimfiles/ftdetect/stp.vim"
+finished sourcing /usr/share/vim/vimfiles/ftdetect/stp.vim
+continuing in /usr/share/vim/vim82/filetype.vim
+finished sourcing /usr/share/vim/vim82/filetype.vim
+continuing in plug#end
+line 88: sourcing "/usr/share/vim/vim82/ftplugin.vim"
+finished sourcing /usr/share/vim/vim82/ftplugin.vim
+continuing in plug#end
+line 88: sourcing "/usr/share/vim/vim82/indent.vim"
+finished sourcing /usr/share/vim/vim82/indent.vim
+continuing in plug#end
+finished sourcing $HOME/.vimrc
+not found in 'packpath': "pack/*/start/*"
+sourcing "/usr/share/vim/vim82/plugin/getscriptPlugin.vim"
+finished sourcing /usr/share/vim/vim82/plugin/getscriptPlugin.vim
+sourcing "/usr/share/vim/vim82/plugin/gzip.vim"
+finished sourcing /usr/share/vim/vim82/plugin/gzip.vim
+sourcing "/usr/share/vim/vim82/plugin/logiPat.vim"
+finished sourcing /usr/share/vim/vim82/plugin/logiPat.vim
+sourcing "/usr/share/vim/vim82/plugin/manpager.vim"
+finished sourcing /usr/share/vim/vim82/plugin/manpager.vim
+sourcing "/usr/share/vim/vim82/plugin/matchparen.vim"
+finished sourcing /usr/share/vim/vim82/plugin/matchparen.vim
+sourcing "/usr/share/vim/vim82/plugin/netrwPlugin.vim"
+finished sourcing /usr/share/vim/vim82/plugin/netrwPlugin.vim
+sourcing "/usr/share/vim/vim82/plugin/rrhelper.vim"
+finished sourcing /usr/share/vim/vim82/plugin/rrhelper.vim
+sourcing "/usr/share/vim/vim82/plugin/spellfile.vim"
+finished sourcing /usr/share/vim/vim82/plugin/spellfile.vim
+sourcing "/usr/share/vim/vim82/plugin/tarPlugin.vim"
+finished sourcing /usr/share/vim/vim82/plugin/tarPlugin.vim
+sourcing "/usr/share/vim/vim82/plugin/tohtml.vim"
+finished sourcing /usr/share/vim/vim82/plugin/tohtml.vim
+sourcing "/usr/share/vim/vim82/plugin/vimballPlugin.vim"
+finished sourcing /usr/share/vim/vim82/plugin/vimballPlugin.vim
+sourcing "/usr/share/vim/vim82/plugin/zipPlugin.vim"
+finished sourcing /usr/share/vim/vim82/plugin/zipPlugin.vim
+not found in 'packpath': "pack/*/start/*"
+not found in 'runtimepath': "plugin/**/*.vim"
+sourcing "$VIMRUNTIME/menu.vim"
+finished sourcing $VIMRUNTIME/menu.vim
+could not source "/etc/gvimrc"
+could not source "$HOME/.gvimrc"
+could not source "~/.vim/gvimrc"
+not found in 'runtimepath': "bitmaps/Open.png"
+not found in 'runtimepath': "bitmaps/Open.xpm"
+not found in 'runtimepath': "bitmaps/Open.bmp"
+not found in 'runtimepath': "bitmaps/Save.png"
+not found in 'runtimepath': "bitmaps/Save.xpm"
+not found in 'runtimepath': "bitmaps/Save.bmp"
+not found in 'runtimepath': "bitmaps/SaveAll.png"
+not found in 'runtimepath': "bitmaps/SaveAll.xpm"
+not found in 'runtimepath': "bitmaps/SaveAll.bmp"
+not found in 'runtimepath': "bitmaps/Print.png"
+not found in 'runtimepath': "bitmaps/Print.xpm"
+not found in 'runtimepath': "bitmaps/Print.bmp"
+not found in 'runtimepath': "bitmaps/Undo.png"
+not found in 'runtimepath': "bitmaps/Undo.xpm"
+not found in 'runtimepath': "bitmaps/Undo.bmp"
+not found in 'runtimepath': "bitmaps/Redo.png"
+not found in 'runtimepath': "bitmaps/Redo.xpm"
+not found in 'runtimepath': "bitmaps/Redo.bmp"
+not found in 'runtimepath': "bitmaps/Cut.png"
+not found in 'runtimepath': "bitmaps/Cut.xpm"
+not found in 'runtimepath': "bitmaps/Cut.bmp"
+not found in 'runtimepath': "bitmaps/Copy.png"
+not found in 'runtimepath': "bitmaps/Copy.xpm"
+not found in 'runtimepath': "bitmaps/Copy.bmp"
+not found in 'runtimepath': "bitmaps/Paste.png"
+not found in 'runtimepath': "bitmaps/Paste.xpm"
+not found in 'runtimepath': "bitmaps/Paste.bmp"
+not found in 'runtimepath': "bitmaps/Replace.png"
+not found in 'runtimepath': "bitmaps/Replace.xpm"
+not found in 'runtimepath': "bitmaps/Replace.bmp"
+not found in 'runtimepath': "bitmaps/FindNext.png"
+not found in 'runtimepath': "bitmaps/FindNext.xpm"
+not found in 'runtimepath': "bitmaps/FindNext.bmp"
+not found in 'runtimepath': "bitmaps/FindPrev.png"
+not found in 'runtimepath': "bitmaps/FindPrev.xpm"
+not found in 'runtimepath': "bitmaps/FindPrev.bmp"
+not found in 'runtimepath': "bitmaps/LoadSesn.png"
+not found in 'runtimepath': "bitmaps/LoadSesn.xpm"
+not found in 'runtimepath': "bitmaps/LoadSesn.bmp"
+not found in 'runtimepath': "bitmaps/SaveSesn.png"
+not found in 'runtimepath': "bitmaps/SaveSesn.xpm"
+not found in 'runtimepath': "bitmaps/SaveSesn.bmp"
+not found in 'runtimepath': "bitmaps/RunScript.png"
+not found in 'runtimepath': "bitmaps/RunScript.xpm"
+not found in 'runtimepath': "bitmaps/RunScript.bmp"
+not found in 'runtimepath': "bitmaps/Make.png"
+not found in 'runtimepath': "bitmaps/Make.xpm"
+not found in 'runtimepath': "bitmaps/Make.bmp"
+not found in 'runtimepath': "bitmaps/RunCtags.png"
+not found in 'runtimepath': "bitmaps/RunCtags.xpm"
+not found in 'runtimepath': "bitmaps/RunCtags.bmp"
+not found in 'runtimepath': "bitmaps/TagJump.png"
+not found in 'runtimepath': "bitmaps/TagJump.xpm"
+not found in 'runtimepath': "bitmaps/TagJump.bmp"
+not found in 'runtimepath': "bitmaps/Help.png"
+not found in 'runtimepath': "bitmaps/Help.xpm"
+not found in 'runtimepath': "bitmaps/Help.bmp"
+not found in 'runtimepath': "bitmaps/FindHelp.png"
+not found in 'runtimepath': "bitmaps/FindHelp.xpm"
+not found in 'runtimepath': "bitmaps/FindHelp.bmp"
+XSMP handling save-yourself request
+Reading viminfo file "/home/hafsa/.viminfo" info oldfiles
+E303: Unable to open swap file for "file.txt", recovery impossible
+"file.txt" [New]
+Reading viminfo file "/home/hafsa/.viminfo" marks
+line 0: sourcing "/usr/share/vim/vim82/scripts.vim"
+finished sourcing /usr/share/vim/vim82/scripts.vim
+continuing in BufNewFile Autocommands for "*"
+line 17: sourcing "/usr/share/vim/vim82/ftplugin/text.vim"
+finished sourcing /usr/share/vim/vim82/ftplugin/text.vim
+continuing in <SNR>10_LoadFTPlugin
+not found in 'runtimepath': "syntax/text.vim syntax/text/*.vim"
+not found in 'runtimepath': "indent/text.vim"
+
+sourcing "/usr/share/vim/vim82/autoload/netrw.vim"
+finished sourcing /usr/share/vim/vim82/autoload/netrw.vim
+line 22: sourcing "/home/hafsa/.vim/.netrwhist"
+finished sourcing /home/hafsa/.vim/.netrwhist
+continuing in <SNR>29_NetrwBookHistRead
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[135]..<SNR>29_NetrwMenu[80]..<SNR>29_NetrwBookmarkMenu:
+line   10:
+E329: No menu "Bookmarks"
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[135]..<SNR>29_NetrwMenu[80]..<SNR>29_NetrwBookmarkMenu:
+line   11:
+E329: No menu "Bookmark Delete"
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[135]..<SNR>29_NetrwMenu[81]..<SNR>29_NetrwTgtMenu:
+line   10:
+E329: No menu "Targets"
+line 0: sourcing "/usr/share/vim/vim82/scripts.vim"
+finished sourcing /usr/share/vim/vim82/scripts.vim
+continuing in BufRead Autocommands for "*"
+line 17: sourcing "/usr/share/vim/vim82/ftplugin/text.vim"
+finished sourcing /usr/share/vim/vim82/ftplugin/text.vim
+continuing in <SNR>10_LoadFTPlugin
+not found in 'runtimepath': "syntax/text.vim syntax/text/*.vim"
+not found in 'runtimepath': "indent/text.vim"
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[141]..<SNR>29_NetrwGetBuffer[67]..<SNR>29_NetrwEnew[64]..<SNR>29_NetrwBufRename:
+line   10:
+E303: Unable to open swap file for "/home/hafsa/Desktop/assignment/memory/", recovery impossible
+"~/Desktop/assignment/memory/" [Not edited] --No lines in buffer--
+not found in 'runtimepath': "ftplugin/netrw.vim ftplugin/netrw_*.vim ftplugin/netrw/*.vim"
+line 25: sourcing "/usr/share/vim/vim82/syntax/netrw.vim"
+netrwGray      xxx cleared
+finished sourcing /usr/share/vim/vim82/syntax/netrw.vim
+continuing in <SNR>3_SynSet
+not found in 'runtimepath': "indent/netrw.vim"
+not found in 'runtimepath': "ftplugin/netrw.vim ftplugin/netrw_*.vim ftplugin/netrw/*.vim"
+line 25: sourcing "/usr/share/vim/vim82/syntax/netrw.vim"
+netrwGray      xxx guifg=gray70
+	Last set from /usr/share/vim/vim82/syntax/netrw.vim line 136
+finished sourcing /usr/share/vim/vim82/syntax/netrw.vim
+continuing in <SNR>3_SynSet
+not found in 'runtimepath': "indent/netrw.vim"
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[252]..<SNR>29_PerformListing[27]..<SNR>29_NetrwBookHistHandler[166]..<SNR>29_NetrwBookmarkMenu:
+line   10:
+E329: No menu "Bookmarks"
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[252]..<SNR>29_PerformListing[27]..<SNR>29_NetrwBookHistHandler[166]..<SNR>29_NetrwBookmarkMenu:
+line   11:
+E329: No menu "Bookmark Delete"
+Pattern not found: ^$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \<core\%(\.\d\+\)\=\>
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.h$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.c$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.cpp$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \~\=\*$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.o$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.obj$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.info$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.swp$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: \.bak$
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Pattern not found: ^\d\{3}ÿ\d\{3}\/
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[252]..<SNR>29_PerformListing[239]..<SNR>29_NetrwWideListing:
+line   75:
+E31: No such mapping
+Error detected while processing function netrw#Explore[221]..netrw#LocalBrowseCheck[26]..<SNR>29_NetrwBrowse[252]..<SNR>29_PerformListing[239]..<SNR>29_NetrwWideListing:
+line   78:
+E31: No such mapping
+Pattern not found: @$
+ 
+
+not found in 'runtimepath': "ftplugin/netrw.vim ftplugin/netrw_*.vim ftplugin/netrw/*.vim"
+line 25: sourcing "/usr/share/vim/vim82/syntax/netrw.vim"
+netrwGray      xxx guifg=gray70
+	Last set from /usr/share/vim/vim82/syntax/netrw.vim line 136
+finished sourcing /usr/share/vim/vim82/syntax/netrw.vim
+continuing in <SNR>3_SynSet
+not found in 'runtimepath': "indent/netrw.vim"
+Error detected while processing function <SNR>29_NetrwBrowseChgDir:
+line  195:
+E303: Unable to open swap file for "/home/hafsa/Desktop/assignment/memory/hamming_code.sv", recovery impossible
+"~/Desktop/assignment/memory/hamming_code.sv" 
+"~/Desktop/assignment/memory/hamming_code.sv" 78L, 2583B
+Reading viminfo file "/home/hafsa/.viminfo" marks
+line 17: sourcing "/usr/share/vim/vim82/ftplugin/systemverilog.vim"
+line 11: sourcing "/usr/share/vim/vim82/ftplugin/verilog.vim"
+finished sourcing /usr/share/vim/vim82/ftplugin/verilog.vim
+continuing in /usr/share/vim/vim82/ftplugin/systemverilog.vim
+finished sourcing /usr/share/vim/vim82/ftplugin/systemverilog.vim
+continuing in <SNR>10_LoadFTPlugin
+line 25: sourcing "/usr/share/vim/vim82/syntax/systemverilog.vim"
+line 12: sourcing "/usr/share/vim/vim82/syntax/verilog.vim"
+finished sourcing /usr/share/vim/vim82/syntax/verilog.vim
+continuing in /usr/share/vim/vim82/syntax/systemverilog.vim
+finished sourcing /usr/share/vim/vim82/syntax/systemverilog.vim
+continuing in <SNR>3_SynSet
+line 14: sourcing "/usr/share/vim/vim82/indent/systemverilog.vim"
+finished sourcing /usr/share/vim/vim82/indent/systemverilog.vim
+continuing in <SNR>15_LoadIndent-- VISUAL --
+27 lines yanked into "+
+Writing viminfo file "/home/hafsa/.viminfo"
+Used CUT_BUFFER0 instead of empty selection
+Used CUT_BUFFER0 instead of empty selection
+".netrwhist" [Not edited] --No lines in buffer--
+"~/.vim/.netrwhist" 12L, 723B written

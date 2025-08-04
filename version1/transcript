@@ -1,0 +1,80 @@
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -gui -voptargs="+acc" axi_master 
+# Start time: 11:21:49 on Aug 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.axi_master_sv_unit(fast)
+# Loading work.axi_master(fast)
+add wave -position insertpoint sim:/axi_master/*
+run -all
+# Causality operation skipped due to absence of debug database file
+# Break key hit
+# Simulation stop requested.
+vlog -reportprogress 300 -work work /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:23:49 on Aug 04,2025
+# vlog -reportprogress 300 -work work /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv 
+# ** Warning: /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv(69): (vlog-13233) Design unit "axi_master_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+# -- Compiling package axi_master_sv_unit
+# -- Compiling module axi_master
+# 
+# Top level modules:
+# 	axi_master
+# End time: 11:23:49 on Aug 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim -gui -voptargs=+acc work.axi_master
+# End time: 11:24:17 on Aug 04,2025, Elapsed time: 0:02:28
+# Errors: 0, Warnings: 0
+# vsim -gui -voptargs="+acc" work.axi_master 
+# Start time: 11:24:17 on Aug 04,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_master_sv_unit(fast)
+# Loading work.axi_master(fast)
+add wave -position insertpoint sim:/axi_master/*
+run -all
+# ** Note: $stop    : /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv(241)
+#    Time: 200 ns  Iteration: 0  Instance: /axi_master
+# Break in Module axi_master at /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv line 241
+vlog -reportprogress 300 -work work /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:27:32 on Aug 04,2025
+# vlog -reportprogress 300 -work work /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv 
+# -- Compiling package axi_master_sv_unit
+# -- Compiling module axi_master
+# 
+# Top level modules:
+# 	axi_master
+# End time: 11:27:32 on Aug 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc work.axi_master
+# End time: 11:27:44 on Aug 04,2025, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 0
+# vsim -gui -voptargs="+acc" work.axi_master 
+# Start time: 11:27:44 on Aug 04,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_master_sv_unit(fast)
+# Loading work.axi_master(fast)
+add wave -position insertpoint sim:/axi_master/*
+run -all
+# BID = z, BRESP = z
+# ** Note: $stop    : /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv(240)
+#    Time: 200 ns  Iteration: 0  Instance: /axi_master
+# Break in Module axi_master at /home/hafsa/Desktop/assignment/memory/version1/axi_master.sv line 240
+# End time: 12:37:47 on Aug 04,2025, Elapsed time: 1:10:03
+# Errors: 0, Warnings: 0

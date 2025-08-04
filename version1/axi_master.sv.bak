@@ -1,0 +1,245 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//                         AXI MASTER
+
+
+// ---------------         Global signal    -------------------------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ACLK         -> Signals are sampled on the rising edge of the global clock.                        //
+// ARESETn      -> Reset signal is active LOW                                                         //
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//------------------------ Write address channel signals ----------------------------------------------//
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// AWID[3:0]    -> This signal is the identification tag for the write address group of                //
+// AWADDR[31:0] -> The write address bus gives the address of the first transfer in a write burst      //
+// AWLEN[3:0]   -> Master Burst length. The burst length gives the exact number of transfers in a burst//
+// AWSIZE[2:0]  -> Master Burst size. This signal indicates the size of each transfer                  //
+// AWBURST[1:0] -> Master Burst type. => FIXED, INCE, WRAP                                             //
+// AWVALID      -> Master Write address valid.                                                         //
+// AWREADY      -> ITS SLAVE SIGNAL  .                                                                 //
+// //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//-------------------------Write data channel signals-------------------------------------------//
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+// WID[3:0]     -> Master Write ID tag.                                                                //
+// WDATA[31:0]  -> Master Write data                                                                   //
+// WSTRB[3:0]   -> Master Write strobes.                                                               //
+// WLAST        -> Master Write last.                                                                  //
+// WVALID       -> Master Write valid.                                                                 //
+// WREADY       -> Slave Write ready                                                                   //
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//-------------------------Write response channel signals-------------------------------//
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+// BID[3:0]     -> Slave Response ID.                                                                  //
+// BRESP[1:0]   -> Slave Write response.                                                               //
+// BVALID       -> Slave Write response valid.                                                         //
+// BREADY       -> Master Response ready.                                                              //
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////---------------------- AXI read address channel signals.------------------------------------------//
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+// ARID[3:0]    -> Master Read address ID                                                              //
+// ARADDR[31:0] -> Master Read address. .                                                              //
+// ARLEN[3:0]   -> Master Burst length.                                                                //
+// ARSIZE[2:0]  -> Master Burst size.                                                                  //
+// ARBURST[1:0] -> Master Burst type.                                                                  //
+// ARVALID      -> Master Read address                                                                 //
+// ARREADY,     -> SLAVE is high.                                                                      //
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//-------------------------Read data channel signals -------------------------------------------------//
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// RID[3:0]     -> Slave Read ID tag.                                                                  //
+// RDATA[31:0]  -> Slave Read data.                                                                    //
+// RRESP[1:0]   -> Slave Read response.OKAY, EXOKAY, SLVERR, and DECERR.                               //
+// RLAST        -> Slave Read last.                                                                    //
+// RVALID       -> Slave Read valid.                                                                   //
+// RREADY       -> Master is ready                                                                     //
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------------------------------//
+
+//-------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+
+
+
+class traffic_generator;
+
+  rand reg [3:0] awid_i, wid_i, arid_i;
+  rand reg [31:0] awaddr_i, araddr_i, wdata_i;
+  rand reg [3:0] awlen_i, arlen_i, wstrb_i;
+  rand reg [2:0] awsize_i, arsize_i;
+  rand reg [1:0] awburst_i, arburst_i;
+  rand bit       awvalid_i, wlast_i, wvalid_i, bready_i, arvalid_i, rready_i;
+
+  constraint write_addr_c {
+    awlen_i inside {[1:4]};
+    awsize_i == 3'b000;  // 1 byte
+    awburst_i == 2'b01;  // INCR
+    awaddr_i inside {32'h2, 32'h4, 32'h8};
+    awvalid_i == 1;
+  }
+
+  constraint write_data_c {
+    wid_i inside {[1:3]};
+    wvalid_i == 1;
+    wstrb_i == 4'b0001; // for 1 byte
+    // wlast_i driven dynamically during loop
+  }
+
+  constraint write_resp_c { bready_i == 1; }
+
+  constraint read_addr_c {
+    arlen_i inside {[1:4]};
+    arsize_i == 3'b000;
+    arburst_i == 2'b01;
+    araddr_i inside {32'h2, 32'h4, 32'h8};
+    arvalid_i == 1;
+  }
+
+  constraint read_data_c { rready_i == 1; }
+
+endclass
+
+
+module axi_master (
+    //-----global signal-----------------//
+    output reg        aclk_o,
+    output reg        areset_o,
+    //-WRITE ADDRESS CHANNEL-----------//
+    output reg [ 3:0] awid_o,
+    output reg [31:0] awaddr_o,
+    output reg [ 3:0] awlen_o,
+    output reg [ 2:0] awsize_o,
+    output reg [ 1:0] awburst_o,
+    output reg        awvalid_o,
+    input             awready_i,
+    //-WRITE DATA CHANNEL--------------//
+    output reg [ 3:0] wid_o,
+    output reg [31:0] wdata_o,
+    output reg [ 3:0] wstrb_o,
+    output reg        wlast_o,
+    output reg        wvalid_o,
+    input             wready_i,
+
+    // WRITE RESPONSE CHANNEL----------//
+    input      [3:0] bid_i,
+    input      [1:0] bresp_i,
+    input            bvalid_i,
+    output reg       bready_o,
+
+    ///READ ADDRESS CHANNEL  ----------//
+    output reg [ 3:0] arid_o,
+    output reg [31:0] araddr_o,
+    output reg [ 3:0] arlen_o,
+    output reg [ 2:0] arsize_o,
+    output reg [ 1:0] arburst_o,
+    output reg        arvalid_o,
+    input             arready_i,
+    // READ DATA CHANNEL---------------//
+    input      [ 3:0] rid_i,
+    input      [31:0] rdata_i,
+    input      [ 1:0] rresp_i,
+    input             rlast_i,
+    input             rvalid_i,
+    output reg        rready_o
+);
+  //write_data_transfer txn;
+  //-----------------Clock Genaration -------------
+  int data_count;
+  traffic_generator tg;
+  
+  initial begin
+    aclk_o = 0;
+    data_count = 0;
+  end
+
+
+initial begin
+  aclk_o = 0;
+  areset_o = 0;
+  #10 areset_o = 1;
+  tg = new();
+  fork
+    write_transaction();
+    read_transaction();
+  join
+end
+
+task write_transaction();
+  int i;
+  if (!tg.randomize()) $fatal("Randomization failed");
+
+  // Address Phase
+  @(posedge aclk_o);
+  awid_o    <= tg.awid_i;
+  awaddr_o  <= tg.awaddr_i;
+  awlen_o   <= tg.awlen_i;
+  awsize_o  <= tg.awsize_i;
+  awburst_o <= tg.awburst_i;
+  awvalid_o <= 1;
+
+  wait (awready_i);
+  awvalid_o <= 0;
+
+  // Data Phase
+  for (i = 0; i <= tg.awlen_i; i++) begin
+    @(posedge aclk_o);
+    wdata_o  <= tg.wdata_i + i; // or randomize per-beat if needed
+    wid_o    <= tg.wid_i;
+    wstrb_o  <= tg.wstrb_i;
+    wvalid_o <= 1;
+    wlast_o  <= (i == tg.awlen_i);
+
+    wait (wready_i);
+    wvalid_o <= 0;
+    wlast_o  <= 0;
+  end
+
+  // Response Phase
+  @(posedge aclk_o);
+  bready_o <= 1;
+  wait (bvalid_i);
+  $strobe("BID = %0d, BRESP = %0d", bid_i, bresp_i);
+  bready_o <= 0;
+endtask
+
+task read_transaction();
+  if (!tg.randomize()) $fatal("Randomization failed");
+
+  // Address Phase
+  @(posedge aclk_o);
+  arid_o    <= tg.arid_i;
+  araddr_o  <= tg.araddr_i;
+  arlen_o   <= tg.arlen_i;
+  arsize_o  <= tg.arsize_i;
+  arburst_o <= tg.arburst_i;
+  arvalid_o <= 1;
+
+  wait (arready_i);
+  arvalid_o <= 0;
+
+  // Data Phase
+  rready_o <= 1;
+  int read_count = 0;
+  while (read_count <= tg.arlen_i) begin
+    @(posedge aclk_o);
+    if (rvalid_i) begin
+      $strobe("RID = %0d, RDATA = %0h, RRESP = %0d, RLAST = %0b",
+              rid_i, rdata_i, rresp_i, rlast_i);
+      read_count++;
+      if (rlast_i) break;
+    end
+  end
+  rready_o <= 0;
+endtask
+endmodule
